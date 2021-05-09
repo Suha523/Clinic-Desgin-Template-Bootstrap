@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Profile</title>
+    <link rel="icon" href="img/Premium Clinic-logos_black.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/sidebar.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+   
+    
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <!-- <div class="row"> -->
+        <!-- <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1"> -->
+        <nav id="sidebar" class="sidebar">
+          <div class="sidebar-header">
+          </div>
+    
+          <ul class="list-unstyled components">
+            <li >
+              <a href="../dashboard/index.html"><i class="fas fa-home mr-2"></i>dashboard</a>
+            </li>
+            <li class="active">
+              <a href="../patients/index.html"><i class="fas fa-users mr-2"></i>Patients</a>
+            </li>
+            <li>
+              <a href="../appointmentCalendar/index.html"><i class="fas fa-calendar-check mr-2"></i>appointments</a>
+            </li>
+            <li  >
+              <a href="../billing/index.html"><i class="fas fa-dollar-sign mr-2"></i>billing</a>
+            </li>
+            <li>
+              <a href="../index.html"><i class="fas fa-sign-out-alt mr-2"></i>logout</a>
+            </li>
+            
+          </ul>
+          <div class="navbar-header">
+            <button type="button" id="sidebarCollapse1" class="btn btn-info navbar-btn btn-disabled sidebarCollapse">
+              <i class="fas fa-arrow-left"></i>
+                            </button>
+          </div>
+        </nav>
+      <!-- </div> -->
+        <!-- Page Content Holder -->
+        <!-- <div class="col-xl-10 col-lg-10 col-md-11 col-sm-11"> -->
+        <div id="content" class="content w-80 pr-3 pt-0">
+            
+              <nav class="navbar navbar-expand-lg navbar-light bg-white p-1 border-bottom ">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" id="sidebarCollapse2" class="btn btn-info navbar-btn btn-disabled sidebarCollapse">
+                      <i class="fas fa-sliders-h"></i>
+                     
+                                    </button>
+                  </div>
+    
+                <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item mr-3 pt-4">
+                      <a class="nav-link " href="#"><i class="fas fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item mr-3 pt-4">
+                      <a class="nav-link  " href="#"><i class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <div class=" doctor-img shadow p-1 bg-gray "></div>
+                      </li>
+                      <li class="nav-item m-1 pt-4">
+                        <h1 class="h1-header">dr. jone smith</h1>
+                      </li>
+                   
+                  </ul>
+                </div>
+              </div>
+              </nav>
+              
+          <!-- write here your page content -->
+          
+            <div class="title mb-4 p-3 m-2 bg-gray rounded-lg d-flex container">
+              <h2 class="text-black text-capitalize text-main-color">patients</h2>
+              <a href="../addPatient/index.html" class="ml-auto mt-2"> <i class="fas fa-plus-circle"></i></a>
+           </div>
+
+  
+           <div class="container p-3 mb-5">
+            
+                 <div class="patients-recent-added text-center p-5 h-100 rounded-lg border-dark-blue bg-gray">
+                      <div class="row mb-4">
+                          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                          <div class="patient-profile border-dark-blue w-100  mb-5 mt-5 h-75 bg-white rounded-lg d-flex flex-column align-items-center">
+                            <div class="patient bg-patient1-img rounded-circle transform shadow-lg border-dark-blue"></div>
+                            <span class="line d-block w-25 pt-0-1 bg-blue rounded-lg line-transform m-auto "></span>
+                            <h3 class="text-capitalize mt-0 h3-size pb-2">jessy mike</h3>
+                            <div class="d-flex justify-content-center mb-3">
+                              <a href="#"class="" ><i class="fab fa-facebook-f bg-gray  d-inline-block rounded-circle mr-2 contacts "></i></a> 
+                              <a href="#" class="" ><i class="fas fa-envelope bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a> 
+                              <a href="#" class="" ><i class="fas fa-phone bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a>
+                           </div>
+                            <a href="../patientProfile/index.html" class="bg-gray pr-4 pl-4 pt-2 pb-2 
+                             rounded-lg mb-4 text-decoration-none bg-blue btn-text-color text-capitalize">view profile</a>
+                          </div>
+                          </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                            <div class="patient-profile border-dark-blue w-100  mb-5 mt-5 h-75 bg-white rounded-lg d-flex flex-column align-items-center">
+                              <div class="patient bg-patient2-img rounded-circle transform shadow-lg border-dark-blue"></div>
+                              <span class="line d-block w-25 pt-0-1 bg-blue rounded-lg line-transform m-auto "></span>
+                              <h3 class="text-capitalize mt-0 pb-2 h3-size">maya mony</h3>
+                              <div class="d-flex justify-content-center mb-3">
+                                <a href="#"class="" ><i class="fab fa-facebook-f bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a> 
+                                <a href="#" class="" ><i class="fas fa-envelope bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a> 
+                                <a href="#" class="" ><i class="fas fa-phone bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a>
+                             </div>
+                              <a href="#" class="bg-gray pr-4 pl-4 pt-2 pb-2
+                               rounded-lg mb-4 text-decoration-none bg-blue btn-text-color text-capitalize">view profile</a>
+                            </div>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                              <div class="patient-profile border-dark-blue w-100  mb-5 mt-5 h-75 bg-white rounded-lg d-flex flex-column align-items-center">
+                                <div class="patient bg-patient3-img rounded-circle transform shadow-lg border-dark-blue"></div>
+                                <span class="line d-block w-25 pt-0-1 bg-blue rounded-lg line-transform m-auto "></span>
+                                <h3 class="text-capitalize mt-0 h3-size pb-2">sary jaims</h3>
+                                <div class="d-flex justify-content-center mb-3">
+                                  <a href="#"class="" ><i class="fab fa-facebook-f bg-gray  d-inline-block rounded-circle mr-2 contacts "></i></a> 
+                                  <a href="#" class="" ><i class="fas fa-envelope bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a> 
+                                  <a href="#" class="" ><i class="fas fa-phone bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a>
+                               </div>
+                                <a href="../patientProfile/index.html" class="bg-gray pr-4 pl-4 pt-2 pb-2 
+                                 rounded-lg mb-4 text-decoration-none bg-blue btn-text-color text-capitalize">view profile</a>
+                              </div>
+                              </div>
+                              <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                <div class="patient-profile border-dark-blue w-100  mb-5 mt-5 h-75 bg-white rounded-lg d-flex flex-column align-items-center">
+                                  <div class="patient bg-patient4-img rounded-circle transform shadow-lg border-dark-blue"></div>
+                                  <span class="line d-block w-25 pt-0-1 bg-blue rounded-lg line-transform m-auto "></span>
+                                  <h3 class="text-capitalize mt-0 h3-size pb-2">tom jone</h3>
+                                  <div class="d-flex justify-content-center mb-3">
+                                    <a href="#"class="" ><i class="fab fa-facebook-f bg-gray  d-inline-block rounded-circle mr-2 contacts "></i></a> 
+                                    <a href="#" class="" ><i class="fas fa-envelope bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a> 
+                                    <a href="#" class="" ><i class="fas fa-phone bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a>
+                                 </div>
+                                  <a href="../patientProfile/index.html" class="bg-gray pr-4 pl-4 pt-2 pb-2 
+                                   rounded-lg mb-4 text-decoration-none bg-blue btn-text-color text-capitalize">view profile</a>
+                                </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                  <div class="patient-profile border-dark-blue w-100  mb-5 mt-5 h-75 bg-white rounded-lg d-flex flex-column align-items-center">
+                                    <div class="patient bg-patient5-img rounded-circle transform shadow-lg border-dark-blue"></div>
+                                    <span class="line d-block w-25 pt-0-1 bg-blue rounded-lg line-transform m-auto "></span>
+                                    <h3 class="text-capitalize mt-0 h3-size pb-2">asher aiden</h3>
+                                    <div class="d-flex justify-content-center mb-3">
+                                      <a href="#"class="" ><i class="fab fa-facebook-f bg-gray  d-inline-block rounded-circle mr-2 contacts "></i></a> 
+                                      <a href="#" class="" ><i class="fas fa-envelope bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a> 
+                                      <a href="#" class="" ><i class="fas fa-phone bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a>
+                                   </div>
+                                    <a href="../patientProfile/index.html" class="bg-gray pr-4 pl-4 pt-2 pb-2 
+                                     rounded-lg mb-4 text-decoration-none bg-blue btn-text-color text-capitalize">view profile</a>
+                                  </div>
+                                  </div>
+                                  <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                    <div class="patient-profile border-dark-blue w-100  mb-5 mt-5 h-75 bg-white rounded-lg d-flex flex-column align-items-center">
+                                      <div class="patient bg-patient6-img rounded-circle transform shadow-lg border-dark-blue"></div>
+                                      <span class="line d-block w-25 pt-0-1 bg-blue rounded-lg line-transform m-auto "></span>
+                                      <h3 class="text-capitalize mt-0 h3-size pb-2">retta matiu</h3>
+                                      <div class="d-flex justify-content-center mb-3">
+                                        <a href="#"class="" ><i class="fab fa-facebook-f bg-gray  d-inline-block rounded-circle mr-2 contacts "></i></a> 
+                                        <a href="#" class="" ><i class="fas fa-envelope bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a> 
+                                        <a href="#" class="" ><i class="fas fa-phone bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a>
+                                     </div>
+                                      <a href="../patientProfile/index.html" class="bg-gray pr-4 pl-4 pt-2 pb-2 
+                                       rounded-lg mb-4 text-decoration-none bg-blue btn-text-color text-capitalize">view profile</a>
+                                    </div>
+                                    </div>
+                       </div>
+                       <a href="#" class="text-capitalize pr-5 pl-5 pt-2 pb-2 
+                       rounded-lg mb-4 text-decoration-none bg-blue btn-text-color">load more</a>
+               
+             
+              </div>
+          </div>
+          </div>
+          </div>
+
+    
+   <script src="js/jquery-3.3.1.slim.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/canvasjs.min.js"></script>
+   <script src="js/chart.min.js"></script>
+   <script src="js/jquery.canvasjs.min.js"></script>
+   <script type="text/javascript" src="js/loader.js"></script>
+   <script type="text/javascript">
+
+    $(document).ready(function() {
+      $('#sidebarCollapse1').on('click', function() {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('out');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      $('#sidebarCollapse2').on('click', function() {
+      $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+
+});
+    });
+
+   
+
+  </script>
+  
+
+
+</body>
+</html>
