@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#074555;
+    --main2-color:#045266;
+    --secondary-color:#DDDDDA;
+    --white-color:#fff;
+    --black-color: #000;
+    --border-color: #47748b;
+    --dark-blue-color: #6E96A0;
+    --blue-color: #53B4EB;
+    --light-blue-color: #39a0db;
+    --green-color: green;
+    --red-color: red;
+    --orange-color: orange;
+    --pink-color: pink;
+    --yellow-color: rgb(205, 195, 50);
+    --white-trans-color:rgba(255,255,255,255, 0.7);
+    --purple-color: purple;
+  }
+
+  @font-face{
+    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+    font-family: PlayfairDisplay;
+  }
+
+  @font-face{
+    src: url(../fonts/Merriweather-Regular.ttf);
+    font-family: Merriweather;
+  }
+  h1,h2,h3,h4,h5,h6,th,td{
+    font-family: Merriweather;
+  }
+  p,a,li{
+    font-family: PlayfairDisplay;
+  }
+
+.bg-img{
+    background-image: url(../img/patient1.jpeg);
+    background-size: cover;
+    height: 120px;
+    width: 120px;
+}
+
+.h2-size{
+    font-size: 25px;
+}
+
+.h3-size{
+    font-size: 20px;
+}
+
+.h4-size{
+    font-size: 17px;
+}
+
+.h5-size{
+    font-size: 16px;
+}
+
+.p-size{
+    font-size: 15px;
+}
+
+.p-big-size{
+    font-size: 30px;
+}
+
+.i-size{
+    font-size: 60px;
+}
+
+.info{
+    height: 400px;
+}
+
+.h-80{
+    height: 400px;
+}
+
+.bg-gray{
+    background-color:var(--secondary-color) ;
+}
+
+.bg-light-blue{
+    background-color: var(--dark-blue-color);
+}
+
+.info-list a{
+   color: var(--main-color);
+}
+
+.info-list a:hover{
+    color: var(--black-color);
+ }
+
+ .info i{
+     font-size: 30px;
+     color: var(--secondary-color);
+ }
+
+ .rounded-xl{
+     border-radius: 20px;
+ }
+
+ .text-red{
+     color: var(--red-color);
+ }
+
+ .text-purple{
+    color: var(--purple-color);
+}
+
+.text-green{
+    color: var(--green-color);
+}
+
+.text-blue{
+    color: var(--blue-color);
+}
+
+.text-gray{
+    color:var(--secondary-color);
+}
+
+.text-main-color{
+    color: var(--main-color);
+}
+
+.text-sec-color{
+    color: var(--dark-blue-color);
+}
+
+.card i{
+    font-size: 40px;
+    color:var(--red-color);
+}
+
+.add-app a:hover{
+   color: var(--main-color);
+}
+
+

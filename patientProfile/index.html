@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Profile</title>
+    <link rel="icon" href="img/Premium Clinic-logos_black.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/sidebar.min.css">
+    <link rel="stylesheet" href="css/style.css">
+   
+    
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <!-- <div class="row"> -->
+        <!-- <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1"> -->
+        <nav id="sidebar" class="sidebar">
+          <div class="sidebar-header">
+          </div>
+    
+          <ul class="list-unstyled components">
+            <li >
+              <a href="../dashboard/index.html"><i class="fas fa-home mr-2"></i>dashboard</a>
+            </li>
+            <li class="active">
+              <a href="index.html"><i class="fas fa-users mr-2"></i>Patients</a>
+            </li>
+            <li>
+              <a href="../appointmentCalendar/index.html"><i class="fas fa-calendar-check mr-2"></i>appointments</a>
+            </li>
+            <li  >
+              <a href="../billing/index.html"><i class="fas fa-dollar-sign mr-2"></i>billing</a>
+            </li>
+            <li>
+              <a href="./index.html"><i class="fas fa-sign-out-alt mr-2"></i>logout</a>
+            </li>
+            
+          </ul>
+          <div class="navbar-header">
+            <button type="button" id="sidebarCollapse1" class="btn btn-info navbar-btn btn-disabled sidebarCollapse">
+              <i class="fas fa-arrow-left"></i>
+                            </button>
+          </div>
+        </nav>
+      <!-- </div> -->
+        <!-- Page Content Holder -->
+        <!-- <div class="col-xl-10 col-lg-10 col-md-11 col-sm-11"> -->
+        <div id="content" class="content w-80 pr-3 pt-0">
+            
+              <nav class="navbar navbar-expand-lg navbar-light bg-white p-1 border-bottom ">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" id="sidebarCollapse2" class="btn btn-info navbar-btn btn-disabled sidebarCollapse">
+                      <i class="fas fa-sliders-h"></i>
+                     
+                                    </button>
+                  </div>
+    
+                <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item mr-3 pt-4">
+                      <a class="nav-link " href="#"><i class="fas fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item mr-3 pt-4">
+                      <a class="nav-link  " href="#"><i class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <div class=" doctor-img shadow p-1 bg-gray "></div>
+                      </li>
+                      <li class="nav-item m-1 pt-4">
+                        <h1 class="h1-header">dr. jone smith</h1>
+                      </li>
+                   
+                  </ul>
+                </div>
+              </div>
+              </nav>
+              
+          <!-- write here your page content -->
+          
+            <div class="title mb-4 p-3 m-2 bg-gray rounded-lg container">
+              <h2 class="text-black text-capitalize text-center text-main-color">patients /patient profile</h2>
+           </div>
+
+  
+          <div class="person d-flex container mb-4 pl-5">
+          <div class="personal-image bg-img rounded-circle shadow p-1 ">
+             
+          </div>
+          <h2 class="text-capitalize mt-5 ml-4 text-main-color">jessy mike</h2>
+        </div>
+      
+
+          <div class=" info container mb-5">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          <div class="personal-info  mr-2 mb-5 p-3 border bg-light-blue rounded-xl">
+              <div class="header d-flex text-center mb-3 p-2">
+                <i class="fas fa-user"></i>
+                <h2 class="text-capitalize mr-5 ml-5 h2-size text-gray">general information</h2>
+                <i class="fas fa-pen"></i>
+              </div>
+              <div class="info-list p-3 bg-gray rounded-xl">
+                <ul class="list-unstyled">
+                  <li class="mb-3 text-capitalize text-main-color">name: jessy r. mike</li>
+                  <li class="mb-3 text-capitalize text-main-color">age: 23 years</li>
+                  <li class="mb-3 text-capitalize text-main-color">gender: female</li>
+                  <li class="mb-3 text-capitalize text-main-color">birth date: 22/5/1998</li>
+                  <li class="mb-3 text-capitalize text-main-color">address: frgy-209-h</li>
+                  <li class="mb-3 text-capitalize text-main-color">email: <a href="mailto: jessym@gmail.com" class="text-decoration-none text-lowercase ">jessym@gmail.com </a></li>
+                  <li class="mb-3 text-capitalize text-main-color">phone: <a href="tel: 2908756635" class="text-decoration-none text-lowercase ">2908756635</a></li>
+                  
+                </ul>
+              </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+          <div class="health-info  ml-2 mb-5 p-3 border bg-light-blue rounded-xl">
+            <div class="header d-flex text-center mb-3 p-2">
+              <i class="fas fa-notes-medical"></i>
+              <h2 class="text-capitalize  mr-5 ml-5 h2-size text-gray">health information</h2>
+              <i class="fas fa-pen"></i>
+            </div>
+            <div class="info-list p-3 bg-gray rounded-xl">
+              <ul class="list-unstyled">
+                <li class="mb-3 text-capitalize text-main-color">blood type: +aB</li>
+                <li class="mb-3 text-capitalize text-main-color">allergies: penicilin</li>
+                <li class="mb-3 text-capitalize text-main-color">diseases: diabets </li>
+                <li class="mb-3 text-capitalize text-main-color">pressure: 130/85 mmHG</li>
+                <li class="mb-3 text-capitalize text-main-color">temperature: 36.8 degree</li>
+                <li class="mb-3 text-capitalize text-main-color">height: 170 cm</li>
+                <li class="mb-3 text-capitalize text-main-color">weight: 67 kg</li>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <div class="vital border p-5 rounded-xl bg-light-blue">
+            
+            <div class="header d-flex mb-4 p-3">
+             <h2 class="text-capitalize text-center text-gray ">vital signs</h2>
+             <i class="fas fa-pen ml-auto"></i>
+            </div>
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                  <div class="card mb-4 p-3 bg-gray rounded-xl">
+                     <h3 class="text-capitalize h3-size mb-3 text-main-color">blood pressure</h3>
+                     <h4 class="text-capitalize h4-size mb-3 text-sec-color">in the normal</h4>
+                     <p  class="text-center p-big-size text-red mb-3">120/98 mmGH</p>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+               <div class="card mb-4 p-3 bg-gray rounded-xl">
+                 <h3 class="text-capitalize h3-size mb-3 text-main-color">heart rate</h3>
+                 <h4 class="text-capitalize h4-size mb-3 text-sec-color">above the normal</h4>
+                 <p  class="text-center p-big-size text-purple mb-3">107 per/min</p>
+              </div>
+             </div>
+             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+               <div class="card mb-4 p-3 bg-gray rounded-xl">
+                 <h3 class="text-capitalize h3-size mb-3 text-main-color">glucose rate</h3>
+                 <h4 class="text-capitalize h4-size mb-3 text-sec-color">in the normal</h4>
+                 <div class="d-flex justify-content-center mb-3">
+                   <i class="fas fa-arrow-up"></i>
+                   <p class="text-center p-big-size ml-3 text-green">97 mg/dl</p>
+                 </div>
+              </div>
+             </div>
+             <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+               <div class="card mb-4 p-3 bg-gray rounded-xl">
+                 <h3 class="text-capitalize h3-size mb-3 text-main-color">cholestrol</h3>
+                 <h4 class="text-capitalize h4-size mb-3 text-sec-color">in the normal</h4>
+                <div class="d-flex justify-content-center mb-3">
+                   <i class="fas fa-arrow-down"></i>
+                   <p class="text-center p-big-size ml-3 text-blue">124 mg/dl</p>
+                 </div>
+                 
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+          </div>
+          <div class=" add-app d-flex justify-content-center mt-4 pb-5 ">
+            <a href="../addAppointment/index.html" class="text-capitalize bg-light-blue text-decoration-none text-gray 
+            d-inline-block pr-4 pl-4 pt-2 pb-2 rounded-lg">add appointment</a>
+          </div>
+         
+        </div>
+
+          </div>
+          </div>
+
+    
+   <script src="js/jquery-3.3.1.slim.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/canvasjs.min.js"></script>
+   <script src="js/chart.min.js"></script>
+   <script src="js/jquery.canvasjs.min.js"></script>
+   <script type="text/javascript" src="js/loader.js"></script>
+   <script type="text/javascript">
+
+    $(document).ready(function() {
+      $('#sidebarCollapse1').on('click', function() {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('out');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      $('#sidebarCollapse2').on('click', function() {
+      $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+
+});
+    });
+
+   
+
+  </script>
+  
+
+
+</body>
+</html>
