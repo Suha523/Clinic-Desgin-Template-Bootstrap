@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" href="img/Premium Clinic-logos_black.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/sidebar.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="calendar.css"> -->
+    
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <!-- <div class="row"> -->
+        <!-- <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1"> -->
+        <nav id="sidebar" class="sidebar">
+          <div class="sidebar-header">
+          </div>
+    
+          <ul class="list-unstyled components">
+            <li class="active">
+              <a href="index.html"><i class="fas fa-home mr-2"></i>dashboard</a>
+            </li>
+            <li>
+              <a href="../patients/index.html"><i class="fas fa-users mr-2"></i>Patients</a>
+            </li>
+            <li>
+              <a href="../appointmentCalendar/index.html"><i class="fas fa-calendar-check mr-2"></i>appointments</a>
+            </li>
+            <li>
+              <a href="../billing/index.html"><i class="fas fa-dollar-sign mr-2"></i>billing</a>
+            </li>
+            <li>
+              <a href="../index.html"><i class="fas fa-sign-out-alt mr-2"></i>logout</a>
+            </li>
+            
+          </ul>
+          <div class="navbar-header">
+            <button type="button" id="sidebarCollapse1" class="btn btn-info navbar-btn btn-disabled sidebarCollapse">
+              <i class="fas fa-arrow-left"></i>
+                            </button>
+          </div>
+        </nav>
+      <!-- </div> -->
+        <!-- Page Content Holder -->
+        <!-- <div class="col-xl-10 col-lg-10 col-md-11 col-sm-11"> -->
+        <div id="content" class="content w-80 pr-3 pt-0">
+            
+              <nav class="navbar navbar-expand-lg navbar-light bg-white p-1 border-bottom ">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" id="sidebarCollapse2" class="btn btn-info navbar-btn btn-disabled sidebarCollapse">
+                      <i class="fas fa-sliders-h"></i>
+                     
+                                    </button>
+                  </div>
+    
+                <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item mr-3 pt-4">
+                      <a class="nav-link " href="#"><i class="fas fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item mr-3 pt-4">
+                      <a class="nav-link  " href="#"><i class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <div class=" doctor-img shadow p-1 bg-gray "></div>
+                      </li>
+                      <li class="nav-item m-1 pt-4">
+                        <h1 class="h1-header">dr. jone smith</h1>
+                      </li>
+                   
+                  </ul>
+                </div>
+              </div>
+              </nav>
+
+              <div class="title p-2 m-2 bg-gray rounded-lg container">
+                 <h2 class="text-black text-capitalize">dashboard</h2>
+              </div>
+              
+              <div class="calculates ">
+                 <div class="container p-3">
+                   <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                       <div class="card card-cal p-3 bg-dark-blue rounded-lg mb-3">
+                         <div class="head d-flex ">
+                          <i class="fas fa-tasks mr-4"></i>
+                          <p class="text-capitalize font-weight-bold p-size text-gray">important tasks</p>
+                        </div>
+                         <h2 class="text-center text-gray">160</h2>
+                       </div>
+                     </div>
+                     <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                      <div class="card card-cal p-3 bg-dark-blue rounded-lg mb-3">
+                        <div class="head d-flex ">
+                          <i class="fas fa-user-plus mr-4"></i>
+                          <p class="text-capitalize font-weight-bold p-size text-gray">new patients</p>
+                       </div>
+                        <h2 class="text-center text-gray">240</h2>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                      <div class="card card-cal p-3 bg-dark-blue rounded-lg mb-3">
+                        <div class="head d-flex ">
+                        <i class="fas fa-user mr-4" ></i>
+                        <p class="text-capitalize font-weight-bold p-size text-gray">total patients</p>
+                       </div>
+                        <h2 class="text-center text-gray">3230</h2>
+                      </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+                      <div class="card card-cal p-3 bg-dark-blue rounded-lg mb-3 ">
+                        <div class="head d-flex ">
+                          <i class="fas fa-dollar-sign mr-4"></i>
+                          <p class="text-capitalize font-weight-bold p-size text-gray">total revenue</p>
+                       </div>
+                        <h2 class="text-center text-gray">$64m</h2>
+                      </div>
+                    </div>
+                   </div>
+                 </div>
+              </div>
+
+              <div class="container p-3 mb-5">
+                <div class="row">
+                   <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 mt-3">
+                     <div class="patients-recent-added text-center p-5 h-100 rounded-lg border-dark-blue bg-gray">
+                        <h2 class="text-capitalize pb-2 h2-size">patients added recently</h2>
+                          <div class="row mb-4">
+                              <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                              <div class="patient-profile border-dark-blue w-100  mb-5 mt-5 h-75 bg-white rounded-lg d-flex flex-column align-items-center">
+                                <div class="patient bg-patient1-img rounded-circle transform shadow-lg border-dark-blue"></div>
+                                <span class="line d-block w-25 pt-0-1 bg-blue rounded-lg line-transform m-auto "></span>
+                                <h3 class="text-capitalize mt-0 h3-size pb-2">jessy mike</h3>
+                                <div class="d-flex justify-content-center mb-3">
+                                  <a href="#"class="" ><i class="fab fa-facebook-f bg-gray  d-inline-block rounded-circle mr-2 contacts "></i></a> 
+                                  <a href="#" class="" ><i class="fas fa-envelope bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a> 
+                                  <a href="#" class="" ><i class="fas fa-phone bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a>
+                               </div>
+                                <a href="../patientProfile/index.html" class="bg-gray pr-4 pl-4 pt-2 pb-2 
+                                 rounded-lg mb-4 text-decoration-none bg-blue btn-text-color text-capitalize">view profile</a>
+                              </div>
+                              </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="patient-profile border-dark-blue w-100  mb-5 mt-5 h-75 bg-white rounded-lg d-flex flex-column align-items-center">
+                                  <div class="patient bg-patient2-img rounded-circle transform shadow-lg border-dark-blue"></div>
+                                  <span class="line d-block w-25 pt-0-1 bg-blue rounded-lg line-transform m-auto "></span>
+                                  <h3 class="text-capitalize mt-0 pb-2 h3-size">asher aiden</h3>
+                                  <div class="d-flex justify-content-center mb-3">
+                                    <a href="#"class="" ><i class="fab fa-facebook-f bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a> 
+                                    <a href="#" class="" ><i class="fas fa-envelope bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a> 
+                                    <a href="#" class="" ><i class="fas fa-phone bg-gray d-inline-block rounded-circle mr-2 contacts"></i></a>
+                                 </div>
+                                  <a href="#" class="bg-gray pr-4 pl-4 pt-2 pb-2
+                                   rounded-lg mb-4 text-decoration-none bg-blue btn-text-color text-capitalize">view profile</a>
+                                </div>
+                                </div>
+                           </div>
+                           <a href="#" class="text-capitalize pr-5 pl-5 pt-2 pb-2 
+                           rounded-lg mb-4 text-decoration-none bg-blue btn-text-color">load more</a>
+                   </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-12 col-md-12 mt-3">
+                   <div class="upcoming-treatments border-dark-blue rounded-lg bg-gray h-100 pt-5 pb-5 d-flex flex-column align-items-center">
+                     <h2 class="text-capitalize h3-size text-center ">today upcoming treatments</h2>
+                     
+                       <ul class="list-unstyled mt-5">
+                         <li class=" ml-3">
+                          <span class="v-line bg-red"></span>
+                          <span class="c-line bg-red"></span>
+                          <span class="h-line bg-red"></span>
+                          <p class="text-capitalize h5-size btn-text-color">treatment1 09:00 am</p>
+                          
+                          </li>
+                         <li class=" ml-3">
+                          <span class="v-line bg-orange"></span>
+                          <span class="c-line bg-orange"></span>
+                          <span class="h-line bg-orange"></span>
+                           <p class="text-capitalize h5-size btn-text-color">treatment2 10:15 am</p>
+                           
+                          </li>
+                         <li class=" ml-3">
+                            <span class="v-line bg-yellow"></span>
+                            <span class="c-line bg-yellow"></span>
+                            <span class="h-line bg-yellow"></span>
+                           <p class="text-capitalize h5-size btn-text-color">treatment3 11:30 am</p>
+                          
+                          </li>
+                         <li class=" ml-3">
+                            <span class="v-line bg-green"></span>
+                            <span class="c-line bg-green"></span>
+                            <span class="h-line bg-green"></span>
+                           <p class="text-capitalize h5-size btn-text-color">treatment4 12:40 pm</p>
+                           
+                          </li>
+                       </ul>
+                       <a href="#" class="text-capitalize  pr-5 pl-5 pt-2 pb-2 
+                       rounded-lg mb-2 text-decoration-none bg-blue btn-text-color ml-2">load more</a>
+                   </div>
+                   </div>
+                  </div>
+              </div>
+
+              <div class="charts container-fluid">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card mb-4">
+                      <div class="card-header card-head bg-gray text-capitalize">gender</div>
+                        <div class="card-body h-100 w-100" >
+                    <div id="pieChart" class="pieChart mb-4">
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card mb-4">
+                      <div class="card-header card-head bg-gray text-capitalize">age</div>
+                        <div class="card-body h-100 w-100" >
+                    <div id="columnChart" class="columnChart mb-4">
+                    </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card mb-4">
+                        <div class="card-header card-head bg-gray text-capitalize">appointment status</div>
+                        <div class="card-body h-100  w-100" >
+                            <canvas id="chart-line" class="chartjs-render-monitor h-75 w-100 d-block" ></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card mb-4">
+                    <div class="card-header card-head bg-gray text-capitalize text-black">calendar</div>
+                    <div class="card-body h-100" >
+                            <div class="month d-flex p-2 align-items-center flex-wrap bg-main white-text border-bottom">
+                              <i class="fas fa-chevron-left d-inline-block w-25 text-left"></i>
+                               <h2 class="w-50 text-center text-capitalize">may</h2>
+                               <i class="fas fa-chevron-right d-inline-block w-25 text-right "></i>
+                            </div>
+                            <div class="year w-100 mb-4 border-bottom">
+                              <h2 class="w-100 text-center text-capitalize bg-main white-text">2021</h2>
+                            </div>
+
+                            <table class="table table-dark">
+                              <thead class="bg-dark-blue">
+                                <tr>
+                                  <th scope="col" class="text-center text-uppercase col-w-45">sat</th>
+                                  <th scope="col" class="text-center text-uppercase col-w-45">sun</th>
+                                  <th scope="col" class="text-center text-uppercase col-w-45">mon</th>
+                                  <th scope="col" class="text-center text-uppercase col-w-45">tus</th>
+                                  <th scope="col" class="text-center text-uppercase col-w-45">wed</th>
+                                  <th scope="col" class="text-center text-uppercase col-w-45">the</th>
+                                  <th scope="col" class="text-center text-uppercase col-w-45">fri</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="text-center col-w-45">1</td>
+                                  <td class="text-center col-w-45">2</td>
+                                  <td class="text-center col-w-45">3</td>
+                                  <td class="text-center col-w-45">4</td>
+                                  <td class="text-center col-w-45">5</td>
+                                  <td class="text-center col-w-45">6</td>
+                                  <td class="text-center col-w-45"><a href="#" class="text-center text-decoration-none bg-gray pt-1 pb-1 pr-3 pl-3 text-black rounded-lg">7</a></td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td class="text-center col-w-45">8</td>
+                                  <td class="text-center col-w-45">9</td>
+                                  <td class="text-center col-w-45">10</td>
+                                  <td class="text-center col-w-45">11</td>
+                                  <td class="text-center col-w-45">12</td>
+                                  <td class="text-center col-w-45">13</td>
+                                  <td class="text-center col-w-45">14</td>
+                                  
+                                </tr>
+                                <tr>
+                                  <td class="text-center">15</td>
+                                  <td class="text-center">16</td>
+                                  <td class="text-center">17</td>
+                                  <td class="text-center">18</td>
+                                  <td class="text-center">19</td>
+                                  <td class="text-center">20</td>
+                                  <td class="text-center">21</td>
+                                </tr>
+                  
+                                <tr>
+                                  <td class="text-center">22</td>
+                                  <td class="text-center">23</td>
+                                  <td class="text-center">24</td>
+                                  <td class="text-center">25</td>
+                                  <td class="text-center">26</td>
+                                  <td class="text-center">27</td>
+                                  <td class="text-center">28</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-center">29</td>
+                                  <td class="text-center">30</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                    </div>  
+                     
+                  </div>
+             
+            </div>
+            <!-- </div> -->
+        <!-- </div> -->
+          </div>
+          </div>
+
+          </div>
+          </div>
+
+    
+   <script src="js/jquery-3.3.1.slim.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/canvasjs.min.js"></script>
+   <script src="js/chart.min.js"></script>
+   <script src="js/jquery.canvasjs.min.js"></script>
+   <script type="text/javascript" src="js/loader.js"></script>
+   <script type="text/javascript">
+
+    $(document).ready(function() {
+      $('#sidebarCollapse1').on('click', function() {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('out');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      $('#sidebarCollapse2').on('click', function() {
+      $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+
+});
+    });
+
+    var pieChartValues = [{
+  y: 39.16,
+  exploded: true,
+  indexLabel: "Male",
+  color: "#1f77b4"
+}, {
+  y: 21.8,
+  indexLabel: "Female",
+  color: "#ff7f0e"
+}];
+renderPieChart(pieChartValues);
+
+function renderPieChart(values) {
+
+  var chart = new CanvasJS.Chart("pieChart", {
+    backgroundColor: "white",
+    colorSet: "colorSet2",
+
+    // title: {
+    //   text: "Gender",
+    //   fontFamily: "Verdana",
+    //   fontSize: 25,
+    //   fontWeight: "normal",
+    // },
+    animationEnabled: true,
+    data: [{
+      indexLabelFontSize: 15,
+      indexLabelFontFamily: "Monospace",
+      indexLabelFontColor: "darkgrey",
+      indexLabelLineColor: "darkgrey",
+      indexLabelPlacement: "outside",
+      type: "pie",
+      showInLegend: false,
+      toolTipContent: "<strong>#percent%</strong>",
+      dataPoints: values
+    }]
+  });
+  chart.render();
+}
+
+var columnChartValues = [{
+  y: 686.04,
+  label: "1 - 10 yr",
+  color: "#1f77b4"
+}, {
+  y: 381.84,
+  label: "11 - 20 yr",
+  color: "#ff7f0e"
+}, {
+  y: 375.76,
+  label: "21 - 30 yr",
+  color: " #ffbb78"
+}, {
+  y: 97.48,
+  label: "31 - 40 yr",
+  color: "#d62728"
+}, {
+  y: 94.2,
+  label: "41 - 55 yr",
+  color: "#98df8a"
+}, {
+  y: 65.28,
+  label: "51 - 60 yr",
+  color: "#bcbd22"
+}, {
+  y: 51.2,
+  label: "61 - 70 yr",
+  color: "#f7b6d2"
+}];
+renderColumnChart(columnChartValues);
+
+function renderColumnChart(values) {
+
+  var chart = new CanvasJS.Chart("columnChart", {
+    backgroundColor: "white",
+    colorSet: "colorSet3",
+    // title: {
+    //   text: "Age",
+    //   fontFamily: "Verdana",
+    //   fontSize: 25,
+    //   fontWeight: "normal",
+    // },
+    animationEnabled: true,
+    legend: {
+      verticalAlign: "bottom",
+      horizontalAlign: "center"
+    },
+    theme: "theme2",
+    data: [
+
+      {
+        indexLabelFontSize: 15,
+        indexLabelFontFamily: "Monospace",
+        indexLabelFontColor: "darkgrey",
+        indexLabelLineColor: "darkgrey",
+        indexLabelPlacement: "outside",
+        type: "column",
+        showInLegend: false,
+        legendMarkerColor: "grey",
+        dataPoints: values
+      }
+    ]
+  });
+
+  chart.render();
+}
+
+$(document).ready(function() {
+        var ctx = $("#chart-line");
+        var myLineChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ["Completed", "Uncompleted", "Partially Completed"],
+                datasets: [{
+                    data: [1700, 1200, 800],
+                    backgroundColor: [ "rgba(100, 255, 0, 0.5)", "rgba(255, 0, 0, 0.5)", "rgba(245, 171, 53, 0.5)"]
+                }]
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: 'Weather'
+                }
+            }
+        });
+    });
+
+   
+
+
+  </script>
+  
+
+
+</body>
+</html>
