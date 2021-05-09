@@ -1,0 +1,107 @@
+
+.root{
+    --main-color:#074555;
+    --secondary-color:#6e96a0;
+    --gray-color:#ddddda;
+    --white-color:#ffffff;
+}
+@font-face{
+    src: url(../fonts/Merriweather-Regular.ttf);
+    font-family: Merriweather;
+  }
+.content.breadcrumb-content{
+    display: flex;
+    justify-content: center; 
+    
+}
+.content .breadcrumb  {
+    width:96%;
+    justify-content: center;
+    background-color: var(--gray-color);
+    border-radius: 10px;  
+    font-size:30px;  
+    font-family: Merriweather; 
+    margin-top: 20px;
+}
+.alert-content{
+    padding-left: 30px;
+    padding-top: 25px;
+    display: flex;   
+}
+.alert-primary{
+    border-radius:30px;
+    background-color: var(--gray-color);
+    width:88%;
+    margin-right: 10px;
+    margin-bottom: 57px;
+    
+}
+
+.rounded-xl{
+    border-radius: 80px;
+}
+
+.rounded-3-diretion{
+   border-radius: 0  80px 80px 0;
+}
+
+.bg-gray{
+    background-color: var(--gray-color);
+}
+
+.bg-main{
+    background-color: var(--main-color);
+}
+
+.form i{
+    color: var(--white-color);
+}
+
+.alerst-item2 .fa-plus-circle{
+    font-size: 40px; 
+    color: var(--main-color);  
+}
+.table{
+    font-size: 13px;
+    width: 85%;
+    margin-left: 50px;
+}
+.table thead tr th{
+   
+    border:3px solid var(--main-color);
+    text-align: center; 
+    /* height:88px; */
+    background-color: var(--gray-color);
+    vertical-align: middle;
+    font-family: Merriweather;
+}
+.table tbody #tr1  ,#tr3 {   
+    /* height:85px;    */
+    background-color:var(--secondary-color) ;  
+}
+.table tbody #tr2 {   
+    /* height:85px; */
+    background-color: var(--gray-color);   
+}
+.table tbody #tr2 td{
+    border:3px solid var(--main-color) ;
+    text-align: center;
+    vertical-align: middle;
+    font-family: Merriweather;
+}
+.table tbody #tr1 td{
+    border:3px solid var(--main-color);
+    text-align: center;
+    vertical-align: middle;
+    font-family: Merriweather;
+}
+.table tbody #tr3 td{
+    border:3px solid var(--main-color);
+    text-align: center;
+    vertical-align: middle;
+    font-family: Merriweather;
+}
+
+.column-w-45{
+    column-width: 55px;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing</title>
+    <link rel="icon" href="img/Premium Clinic-logos_black.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/sidebar.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+   
+    
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <!-- <div class="row"> -->
+        <!-- <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1"> -->
+        <nav id="sidebar" class="sidebar">
+          <div class="sidebar-header">
+          </div>
+    
+          <ul class="list-unstyled components">
+            <li >
+              <a href="../dashboard/index.html"><i class="fas fa-home mr-2"></i>dashboard</a>
+            </li>
+            <li>
+              <a href="../patients/index.html"><i class="fas fa-users mr-2"></i>Patients</a>
+            </li>
+            <li>
+              <a href="../appointmentCalendar/index.html"><i class="fas fa-calendar-check mr-2"></i>appointments</a>
+            </li>
+            <li  class="active">
+              <a href="index.html"><i class="fas fa-dollar-sign mr-2"></i>billing</a>
+            </li>
+            <li>
+              <a href="../index.html"><i class="fas fa-sign-out-alt mr-2"></i>logout</a>
+            </li>
+            
+          </ul>
+          <div class="navbar-header">
+            <button type="button" id="sidebarCollapse1" class="btn btn-info navbar-btn btn-disabled sidebarCollapse">
+              <i class="fas fa-arrow-left"></i>
+                            </button>
+          </div>
+          
+        </nav>
+      <!-- </div> -->
+        <!-- Page Content Holder -->
+        <!-- <div class="col-xl-10 col-lg-10 col-md-11 col-sm-11"> -->
+        <div id="content" class="content w-80 pr-3 pt-0">
+            
+              <nav class="navbar navbar-expand-lg navbar-light bg-transparent p-1 border-bottom ">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" id="sidebarCollapse2" class="btn btn-info navbar-btn btn-disabled sidebarCollapse">
+                      <i class="fas fa-sliders-h"></i>
+                     
+                                    </button>
+                  </div>
+    
+                <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item mr-3 pt-4">
+                      <a class="nav-link  " href="#"><i class="fas fa-bell "></i></a>
+                    </li>
+                    <li class="nav-item mr-3 pt-4">
+                      <a class="nav-link " href="#"><i class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <div class="   doctor-img shadow p-1 bg-white "></div>
+                      </li>
+                      <li class="nav-item m-1 pt-4">
+                        <h1 class="h1-header">dr. jone smith</h1>
+                      </li>
+                   
+                  </ul>
+                </div>
+              </div>
+              </nav>
+              
+              <nav aria-label="breadcrumb ">
+                <div class="breadcrumb-content">
+                <ol class="breadcrumb ">
+                  <li class="breadcrumb-item active " aria-current="page">Billing</li>
+                  <li class="breadcrumb-item active " aria-current="page">Payments</li>
+                </ol>
+              </div>
+              </nav>
+    
+              <div class="alert-content mb-5 ">
+                <div class="container">
+                  <div class="d-flex ">
+                    <div class="form w-75 ">
+                    <form class="form-inline ">
+                      <div class="input-group container w-100">
+                        <input type="text" class="form-control rounded-xl " placeholder="Search" aria-label="Search"
+                              aria-describedby="search-addon" />
+                        <a href="#" class="text-decoration-none ">
+                           <span class="input-group-text border-right rounded-3-diretion h-100 bg-main" id="search-addon">
+                             <i class="fas fa-search "></i>
+                           </span>
+                          </a>       
+                 </div>
+                 
+                    </form>
+                  </div>
+
+                      
+              <div class="alerst-item2 w-25">
+                <a href="../addPayment/index.html" class="text-decoration-none"><i class="fas fa-plus-circle"></i></a>
+              </div>
+            </div>              
+            </div>
+          </div>
+          <div class="container">
+            <table class="table">
+              
+              <thead>
+                <div class="thead-content">
+                <tr>
+                  <th class="column-w-45 text-capitalize" scope="col">payment no.</th>
+                  <th class="column-w-45 text-capitalize" scope="col">payment date</th>
+                  <th class="column-w-45 text-capitalize" scope="col">patient</th>
+                  <th class="column-w-45 text-capitalize" scope="col">payment amount</th>
+                  <th class="column-w-45 text-capitalize" scope="col">payment status</th>
+                </tr>
+              </div>
+              </thead>
+           
+              <tbody>
+                <tr id="tr1">
+                  <td class="column-w-45 text-center">225435</td>
+                  <td class="column-w-45 text-center">22/3/2021</td>
+                  <td class="column-w-45 text-center text-capitalize">jessy</td>
+                  <td class="column-w-45 text-center">$300</td>
+                  <td class="column-w-45 text-center">pended </td>
+                </tr>
+                <tr id="tr2">
+                  <td class="column-w-45 text-center">875543</td>
+                  <td class="column-w-45 text-center">3/4/2021</td>
+                  <td class="column-w-45 text-center text-capitalize">retta</td>
+                  <td class="column-w-45 text-center">$100</td>
+                  <td class="column-w-45 text-center">completed</td>
+                </tr>
+                <tr id="tr3">
+                  <td class="column-w-45 text-center">656754</td>
+                  <td class="column-w-45 text-center">4/4/2021</td>
+                  <td class="column-w-45 text-center text-capitalize">tom</td>
+                  <td class="column-w-45 text-center">$500</td>
+                  <td class="column-w-45 text-center">partial</td>
+                </tr>
+              </tbody>
+            
+            </table>
+          </div>
+              
+              
+
+          </div>
+          
+          </div>
+         
+
+          
+
+    
+   <script src="js/jquery-3.3.1.slim.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/canvasjs.min.js"></script>
+   <script src="js/chart.min.js"></script>
+   <script src="js/jquery.canvasjs.min.js"></script>
+   <script type="text/javascript" src="js/loader.js"></script>
+   <script type="text/javascript">
+
+    $(document).ready(function() {
+      $('#sidebarCollapse1').on('click', function() {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('out');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      $('#sidebarCollapse2').on('click', function() {
+      $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+
+});
+    });
+
+   
+
+  </script>
+  
+
+
+</body>
+</html>
