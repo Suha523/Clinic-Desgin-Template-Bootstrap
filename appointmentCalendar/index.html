@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointments</title>
+    <link rel="icon" href="img/Premium Clinic-logos_black.png">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/sidebar.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+   
+    
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <!-- <div class="row"> -->
+        <!-- <div class="col-xl-2 col-lg-2 col-md-1 col-sm-1"> -->
+        <nav id="sidebar" class="sidebar">
+          <div class="sidebar-header">
+          </div>
+    
+          <ul class="list-unstyled components">
+            <li >
+              <a href="../dashboard/index.html"><i class="fas fa-home mr-2"></i>dashboard</a>
+            </li>
+            <li >
+              <a href="../patients/index.html"><i class="fas fa-users mr-2"></i>Patients</a>
+            </li>
+            <li class="active">
+              <a href="index.html"><i class="fas fa-calendar-check mr-2"></i>appointments</a>
+            </li>
+            <li  >
+              <a href="../billing/index.html"><i class="fas fa-dollar-sign mr-2"></i>billing</a>
+            </li>
+            <li>
+              <a href="../index.html"><i class="fas fa-sign-out-alt mr-2"></i>logout</a>
+            </li>
+            
+          </ul>
+          <div class="navbar-header">
+            <button type="button" id="sidebarCollapse1" class="btn btn-info navbar-btn btn-disabled sidebarCollapse">
+              <i class="fas fa-arrow-left"></i>
+                            </button>
+          </div>
+        </nav>
+      <!-- </div> -->
+        <!-- Page Content Holder -->
+        <!-- <div class="col-xl-10 col-lg-10 col-md-11 col-sm-11"> -->
+        <div id="content" class="content w-80 pr-3 pt-0">
+            
+              <nav class="navbar navbar-expand-lg navbar-light bg-white p-1 border-bottom ">
+                <div class="container-fluid">
+                  <div class="navbar-header">
+                    <button type="button" id="sidebarCollapse2" class="btn btn-info navbar-btn btn-disabled sidebarCollapse">
+                      <i class="fas fa-sliders-h"></i>
+                     
+                                    </button>
+                  </div>
+    
+                <button class="navbar-toggler" type="button"  data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item mr-3 pt-4">
+                      <a class="nav-link " href="#"><i class="fas fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item mr-3 pt-4">
+                      <a class="nav-link  " href="#"><i class="fas fa-envelope"></i></a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <div class=" doctor-img shadow p-1 bg-gray "></div>
+                      </li>
+                      <li class="nav-item m-1 pt-4">
+                        <h1 class="h1-header">dr. jone smith</h1>
+                      </li>
+                   
+                  </ul>
+                </div>
+              </div>
+              </nav>
+              
+          <!-- write here your page content -->
+          <div class="container mb-4">
+          <div class="title p-2 m-2 bg-gray rounded-lg ">
+            <h2 class="text-black text-capitalize">appointments</h2>
+         </div>
+        </div>
+          <div class=" container">
+          
+            <div class="month d-flex p-3 align-items-center flex-wrap bg-main white-text border-bottom">
+              <i class="fas fa-chevron-left d-inline-block w-25 text-left"></i>
+               <h2 class="w-50 text-center text-capitalize">may</h2>
+               <i class="fas fa-chevron-right d-inline-block w-25 text-right"></i>
+            </div>
+            <div class="year w-100 mb-1 border-bottom">
+              
+              <h2 class="w-100 text-center p-2 text-capitalize bg-main white-text">2021</h2>
+           
+          </div>
+          </div>
+          
+    <div class="container  ">
+            <table class="table table-dark">
+              <thead class="bg-dark-blue">
+                <tr>
+                  <th scope="col" class="text-center text-uppercase col-w-45"></th>
+                  <th scope="col" class="text-center text-uppercase col-w-45">9:00-10:00</th>
+                  <th scope="col" class="text-center text-uppercase col-w-45">10:00-11:00</th>
+                  <th scope="col" class="text-center text-uppercase col-w-45">11:00-12:00</th>
+                  <th scope="col" class="text-center text-uppercase col-w-45">12:00-13:00</th>
+                  <th scope="col" class="text-center text-uppercase col-w-45">13:00-14:00</th>
+                  <th scope="col" class="text-center text-uppercase col-w-45">14:00-15:00</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <th class="text-center col-w-45">1/may</th>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45 bg-gray"><a href="#" class="text-center text-decoration-none pt-1 pr-2 pl-2 text-black rounded-lg">treat1</a></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  
+                </tr>
+                <tr>
+                  <th class="text-center col-w-45">2/may</th>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45 bg-gray"><a href="#" class="text-center text-decoration-none pt-1 pr-2 pl-2 text-black rounded-lg">treat2</a></td>
+                  <td class="text-center col-w-45"></td>
+                  
+                </tr>
+                <tr>
+                  <th class="text-center col-w-45">3/may</th>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45 bg-gray"><a href="#" class="text-center text-decoration-none pt-1 pr-2 pl-2 text-black rounded-lg">treat3</a></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45 bg-gray"><a href="#" class="text-center text-decoration-none pt-1 pr-2 pl-2 text-black rounded-lg">treat4</a></td>
+                  
+                </tr>
+  
+                <tr>
+                  <th class="text-center col-w-45">4/may</th>
+                  <td class="text-center col-w-45 bg-gray"><a href="#" class="text-center text-decoration-none pt-1 pr-2 pl-2 text-black rounded-lg">treat5</a></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  
+                </tr>
+                <tr>
+                  <th class="text-center col-w-45">5/may</th>
+                  <td class="text-center col-w-45 bg-gray"><a href="#" class="text-center text-decoration-none pt-1 pr-2 pl-2 text-black rounded-lg">treat3</a></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  
+                </tr>
+                <tr>
+                  <th class="text-center col-w-45">6/may</th>
+                  <td class="text-center col-w-45 bg-gray"><a href="#" class="text-center text-decoration-none pt-1 pr-2 pl-2 text-black rounded-lg">treat4</a></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45 bg-gray"><a href="#" class="text-center text-decoration-none pt-1 pr-2 pl-2 text-black rounded-lg">treat2</a></td>
+                  <td class="text-center col-w-45"></td>
+                  <td class="text-center col-w-45"></td>
+                  
+                </tr>
+              </tbody>
+            </table>
+         
+         
+     
+         
+        </div>
+          </div>
+          </div>
+         
+          
+
+    
+   <script src="js/jquery-3.3.1.slim.min.js"></script>
+   <script src="js/popper.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script src="js/canvasjs.min.js"></script>
+   <script src="js/chart.min.js"></script>
+   <script src="js/jquery.canvasjs.min.js"></script>
+   <script type="text/javascript" src="js/loader.js"></script>
+   <script type="text/javascript">
+
+    $(document).ready(function() {
+      $('#sidebarCollapse1').on('click', function() {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('out');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      $('#sidebarCollapse2').on('click', function() {
+      $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+
+});
+    });
+
+   
+
+  </script>
+  
+
+
+</body>
+</html>
