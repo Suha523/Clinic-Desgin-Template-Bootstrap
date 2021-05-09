@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#074555;
+    --white-color:#fff;
+    --black-color: #000;
+    --black-trans-color: rgba(0,0,0,0.19);
+  }
+
+  @font-face{
+    src: url(../fonts/PlayfairDisplay-VariableFont_wght.ttf);
+    font-family: PlayfairDisplay;
+  }
+
+  @font-face{
+    src: url(../fonts/Merriweather-Regular.ttf);
+    font-family: Merriweather;
+  }
+  h1,h2,h3,h4,h5,h6,th,td{
+    font-family: Merriweather;
+  }
+  p,a, label,input{
+    font-family: PlayfairDisplay;
+  }
+.bg-img{
+    background-image: url(../img/MTI_NHS_Healthcare.jpg);
+    background-size: cover;
+    height: 100vh;
+    /* overflow: hidden;
+    position: relative; */
+    }
+
+    .bg-trans-black{
+        background-color: var(--black-trans-color);
+    }
+
+    .w-70{
+        width: 60%;
+    }
+
+    .text-black{
+        color: var(--black-color);
+    }
+
+    .bg-dark-blue{
+        background-color: var(--main-color);
+    }
+
+    .text-white{
+        color: var(--white-color);
+    }
+
+   
+
+   /*.home:after{
+        content: "";
+        display: block;
+        width:100%;
+        height: 100vh;
+        
+        background-color:rgba(0, 0,0, 0.37);
+    }*/
+     /* .form{
+        background-color: rgba(0, 0,0, 0.3);
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 350px;
+        width: 450px;
+        border-radius: 12px;
+    } */
+    /* .form .name,.pass{  */
+        /*height: 50px;
+        width: 200px;
+        border-radius:15px;
+        padding-top: 10px;*/
+        /* padding-top: 21px;
+        
+      
+    }
+    .form i{
+        background-color: #074555;
+     margin-left: 20px;
+        height: 100px;
+        font-size: 40px;
+        border-radius: 15px ;
+        text-align: center;
+        display: inline;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+    }
+.input{
+        height: 50px;
+        width: 500px;
+        border-radius: 10px;
+        
+    }
+    .form a{
+        text-decoration: none;
+    }
+    .log{
+        background-color: #074555;
+        color: #fff;
+        padding: 10px 40px;
+        margin-left: 130px;
+       
+        border-radius: 10px;
+    }
+    .forget{
+        color: #000;
+       padding-left: 140px; 
+    }
+    h1{
+        text-transform: uppercase;
+        padding: 10px;
+    }
+    .form input{
+        width: 300px;
+        height: 30px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        
+    }
+    .form .remm{
+        width: 20px;
+        height: 18px;
+        margin-left: 20px;
+        margin-top: 20px;
+        
+    } */
+    
+    
+
+
+
+    
